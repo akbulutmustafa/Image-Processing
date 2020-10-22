@@ -1,15 +1,10 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[33]:
-
 
 import os
 os.getcwd()
 os.listdir()
-
-
-# In[34]:
 
 
 path = os.getcwd()
@@ -17,21 +12,13 @@ jpg_files = [f for f in os.listdir(path) if f.endswith('.jpg')]
 jpg_files
 
 
-# In[35]:
-
 
 import numpy as np
 import matplotlib.pyplot as plt
 
 
-# In[40]:
-
-
 im_1=plt.imread('canakkale.jpg')
 im_1.shape
-
-
-# In[37]:
 
 
 def get_value_from_triple(temp_1):
@@ -43,9 +30,6 @@ def get_0_1_from_triple(temp_1):
         return 0
     else:
         return 1
-
-
-# In[38]:
 
 
 def convert_rgb_to_gray(im_1):
@@ -66,8 +50,6 @@ def convert_rgb_to_bw(im_1):
             new_image[i,j]=s
     return new_image
 
-
-# In[39]:
 
 
 im_1_gray = convert_rgb_to_gray(im_1)
