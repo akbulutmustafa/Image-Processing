@@ -82,7 +82,7 @@ def define_mask_2():
         for j in range(3):
             print(mask[i][j], end=" ")
         print()
-    return mask_1
+    return mask_2
 def my_dilation(img_1,mask):
     m=img_1.shape[0] #100
     n=img_1.shape[1] #100
