@@ -96,7 +96,9 @@ mp.W
 # predict fonksiyonununda öncelikle x'e bias'ı ekliyoruz 
 # ağırlıklar ve x değerlerini çarpıyoruz ve sonucu aktivasyon fonksiyonuna gönderip gelen değeri dönüyoruz
 # 
-# fit fonksiyonunda ise tek tek her x elemanı için predict yapılarak y değerleri elde edilir ve beklenen değerden y değeri çıkarılarak hata hesaplanır. sonrasında hata değeri, öğrenme sıklığı ve x'in o anki elemanı çarpılıp eski ağırlıklarla toplandıktan sonra yeni eğırlıklar hesaplanmış olur ve bu işlem init fonksiyonu içerisinde tanımlanan döngü sayısı kadar tekrar eder.
+# fit fonksiyonunda ise tek tek her x elemanı için predict yapılarak y değerleri elde edilir ve beklenen değerden y değeri 
+# çıkarılarak hata hesaplanır. sonrasında hata değeri, öğrenme sıklığı ve x'in o anki elemanı çarpılıp eski ağırlıklarla toplandıktan 
+# sonra yeni eğırlıklar hesaplanmış olur ve bu işlem init fonksiyonu içerisinde tanımlanan döngü sayısı kadar tekrar eder.
 # 
 # 
 # 
@@ -121,13 +123,10 @@ perceptron.fit(X, d1)
 perceptron.W
 
 
-# X yani input eğer yükseklik-genişlik değerleri m,n ise mxnx3 bir veri olur.40 öğrenci için imza her bir sütununda bir kişiye ait imza resmi olmak üzere (m*n*3,40)'lık bir matris bizim verimiz olacaktır.Koddaki d'ye karşılık yani çıktı için 40 farklı değer olacaktır.
+# X yani input eğer yükseklik-genişlik değerleri m,n ise mxnx3 bir veri olur.40 öğrenci için imza her bir sütununda bir kişiye ait 
+# imza resmi olmak üzere (m*n*3,40)'lık bir matris bizim verimiz olacaktır.Koddaki d'ye karşılık yani çıktı için 40 farklı değer olacaktır.
 # ##4.Perceptron bunu tanıma yeteneğine sahip değildir.Bu yüzden bu modelin hatası elde edilemeyecektir.
 
 # Perceptron bunu tanıma yeteneğine sahip değildir.Bu yüzden bu modelin hatası elde edilemeyecektir.
-
-# In[ ]:
-
-
 
 
